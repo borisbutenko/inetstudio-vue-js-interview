@@ -1,16 +1,17 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
 
+import Users from "@/pages/Users"
+
 Vue.use(VueRouter)
 
 export default new VueRouter({
-  mode: "history",
   routes: [
     {
       name: "Users",
       path: "/users",
       alias: "/",
-      component: () => import("@/pages/Users"),
+      component: Users,
     },
     {
       name: "other",
